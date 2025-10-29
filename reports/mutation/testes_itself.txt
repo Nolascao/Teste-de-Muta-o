@@ -70,11 +70,6 @@ describe('Suíte de Testes Fraca para 50 Operações Aritméticas', () => {
   test('45. deve verificar se um número é menor que outro', () => { expect(isMenorQue(5, 10)).toBe(true); });
   test('46. deve verificar se dois números são iguais', () => { expect(isEqual(7, 7)).toBe(true); });
   test('47. deve calcular a mediana de um array ímpar e ordenado', () => { expect(medianaArray([1, 2, 3, 4, 5])).toBe(3); });
-  test('NOVO - 47.1 deve calcular a mediana de um array par e ordenado', () => { expect(medianaArray([1, 2, 3, 4])).toBe(2.5);});
-  test('NOVO - 47.2 deve lançar erro para array vazio', () => { expect(() => medianaArray([])).toThrow('Array vazio не possui mediana.');});
-  test('NOVO - 47.3 deve calcular a mediana de um array ímpar não ordenado', () => { expect(medianaArray([5, 1, 3, 2, 4])).toBe(3);});
-  test('NOVO - 47.4 deve calcular a mediana de um array par não ordenado', () => { expect(medianaArray([4, 1, 3, 2])).toBe(2.5);});
-  test('NOVO - 47.5 deve calcular a mediana corretamente com números negativos e positivos não ordenados', () => { expect(medianaArray([-2, 4, 1, 3])).toBe(2); });
   test('48. deve calcular o dobro de um número', () => { expect(dobro(10)).toBe(20); });
   test('49. deve calcular o triplo de um número', () => { expect(triplo(10)).toBe(30); });
   test('50. deve calcular a metade de um número', () => { expect(metade(20)).toBe(10); });
